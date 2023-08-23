@@ -8,6 +8,6 @@ import { FilterTextboxComponent } from './customers-list/filter-textbox.componen
 @NgModule({
   imports:      [ CommonModule ],
   declarations: [ CustomersComponent, CustomersListComponent, FilterTextboxComponent ],
-  exports:       [ CustomersComponent ]
+  exports:      [ CustomersComponent ]
 })
 export class CustomersModule { }
