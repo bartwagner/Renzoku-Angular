@@ -13,14 +13,13 @@ export class CustomersListComponent implements OnInit {
     }
 
     set customers(value: ICustomer[]){
-        window.console.log(value)
         if (value){
             this.filteredCustomers = this._customers = value;
             this.calculateOrders();
         }
     }
 
-    filteredCustomers: ICustomer[] = [];
+    filteredCustomers: any[] = [];
     customersOrderTotal: number = 0;
     currencyCode: string = 'USD';
     
